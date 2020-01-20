@@ -2,12 +2,110 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Welcome Page</title>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        {{> header}}
-        <h1>{{pageTitle}}</h1>
-        <p>{{screamIt welcomeMessage}}</p>
+            {{> banner}}
+            {{> header}}
+            <p id="welcomeMsg">{{screamIt welcomeMessage}}
+                <br/> We track current trends in the world of gaming
+            </p>
+            <h3 id="subTopic">
+                Top trending PC Games
+            </h3>
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.0.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.0.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.0.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.1.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.1.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.1.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.2.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.2.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.2.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.3.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.3.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.3.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.4.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.4.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.4.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.5.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.5.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.5.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.6.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.6.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.6.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.7.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.7.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.7.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.8.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.8.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.8.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+        {{#each image}}
+            <div class="gallery">
+                <a target="_blank" href="{{this.9.url}}" style="text-decoration: none;">
+                    <img src="assets/{{this.9.fileName}}.jpg" width="400" height="800">
+                    <label id="assetTag">{{this.9.tag}}</label>
+                </a>
+            </div>
+        {{/each}}
+
+    <div style="height: 100vh;"></div>
         {{> footer}}
     </body>
 </html>

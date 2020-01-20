@@ -5,6 +5,8 @@ const fs = require('fs');
 const port = process.env.PORT || 3000;
 var app = express();
 
+var homeimageassets = require('../node-web-server/public/js/home');
+
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
@@ -37,19 +39,23 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/', (req, res) => {
     res.render('home.hbs',{
-        pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to my website'
+        websiteHeading: 'GAME BLOGS',
+        welcomeMessage: 'Welcome to Game Blogs',
+        image: homeimageassets,
+        // tag: homeimageassets.imgTag
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
+        websiteHeading: 'GAME BLOGS',
         pageTitle: 'About Page',
     });
 });
 
 app.get('/projects', (req,res) => {
     res.render('projects.hbs',{
+        websiteHeading: 'GAME BLOGS',
         message: 'Portfolio page here.'
     });
 });
