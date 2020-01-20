@@ -5,7 +5,7 @@ const fs = require('fs');
 const port = process.env.PORT || 3000;
 var app = express();
 
-var homeimageassets = require('../node-web-server/public/js/home');
+var {pcGames} = require('./public/js/home');
 
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
     res.render('home.hbs',{
         websiteHeading: 'GAME BLOGS',
         welcomeMessage: 'Welcome to Game Blogs',
-        image: homeimageassets,
+        image: pcGames,
         // tag: homeimageassets.imgTag
     });
 });
