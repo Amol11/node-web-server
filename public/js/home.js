@@ -6,7 +6,7 @@ var pcGames= [
     },
     {
         tag: 'Watch_Dogs',
-        fileName: 'watch dogs',
+        fileName: 'Watch Dogs',
         url: 'https://www.youtube.com/watch?v=PFko4Kut39s',
     },
     {
@@ -46,7 +46,7 @@ var pcGames= [
     },
     {
         tag: "The Walking Dead",
-        fileName: 'walking dead',
+        fileName: 'Walking dead',
         url: 'https://www.youtube.com/watch?v=P9G24VZwW5E',
     },
 ];
