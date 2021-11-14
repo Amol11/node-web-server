@@ -59,6 +59,24 @@ var pcGames= [
         url: 'https://www.youtube.com/watch?v=P9G24VZwW5E',
         year: '2012'
     },
+    {
+        tag: "Grand Theft Auto V",
+        fileName: 'gta_5',
+        url: 'https://www.youtube.com/watch?v=QkkoHAzjnUs',
+        year: '2013'
+    },
+    {
+        tag: "Dark Souls II",
+        fileName: 'dark_souls_2',
+        url: 'https://www.youtube.com/watch?v=qByFob7-8VY',
+        year: '2014'
+    },
+    {
+        tag: "Destiny",
+        fileName: 'destiny',
+        url: 'https://www.youtube.com/watch?v=jv7vqCmt6wY',
+        year: '2014'
+    },
 ];
 
 module.exports = {pcGames};
