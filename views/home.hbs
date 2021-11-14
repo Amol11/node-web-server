@@ -18,15 +18,16 @@
         {{#each image}}
             <div class="gallery">
                 <a target="_blank" href="{{this.url}}" style="text-decoration: none;">
-                    <img src="assets/{{this.fileName}}.jpg" width="400" height="800">
-                    <label id="assetTag">{{this.tag}}</label>
+                    <img src="assets/{{this.fileName}}.jpg">
+                    <label id="assetTag">{{this.tag}}</label> <br/>
+                    <label id="assetTag"><b id="yearOfRelease">Release year:</b> <b id="year">{{this.year}}</b></label>
                 </a>
             </div>
         {{/each}}
 
         
 
-    <div style="height: 100vh;"></div>
+    <div style="height: 120vh;"></div>
         {{> footer}}
     </body>
 </html>
